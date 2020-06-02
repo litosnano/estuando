@@ -1,0 +1,100 @@
+/*Estilo de la zona alta: cabecera y navegación para todos los html*/
+
+.logo {
+    height: 60px;
+    width: 60px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+nav ul li:hover a {
+    color: black;
+    text-decoration: none;
+}
+
+/*Estilo de la section mapa para todos los html*/
+
+.cover{
+    height: 600px;
+    background-image: url(../images/mapa.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.1);
+    background-blend-mode: darken;
+    color: white;
+  }
+
+/*Estilo de la section 2 para index*/
+
+.data {
+    background-color: #F8F9FA;
+}
+
+.fondo {
+    background-color: #F8F9FA;
+    font-weight: bold;
+    font-size:1.25em;
+}
+
+.simbol {
+    height: 30px;
+    width: 20px;
+}
+
+/*Estilo section 3 viajes, no utilizado en contacto pero en resto si parcialmente */
+
+.cover-small {
+    height: 300px;
+    background-blend-mode: normal;
+  }
+
+.card-text {
+    text-align:justify;
+}
+
+/*Estilo de la section 4 fotos de las redes sociales para todos los html*/
+
+section h3 {
+    text-align: center;
+}
+
+.fotos {
+    text-align: center;
+    margin: 20px;
+}
+
+.fotos img {
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    margin: 0 10px 0 10px;
+}
+
+/*Estilo del footer para todos los html*/
+
+footer {
+    height: 100px;
+    background-color: #F8F9FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}

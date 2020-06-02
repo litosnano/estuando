@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Estuando</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+        />   
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+        <script src="/script.js" defer></script>
+    </head>
+    <body>
+        <header class="sticky-top">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex bd-highlight navbar-toggeable-md">
+            <a class="navbar-brand" href="../index.html">
+              <img src="../images/logo.png" alt="logotipo empresa" class="d-inline-block align-middle logo"/> ESTUANDO
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarTogglerDemo01"
+              aria-controls="navbarTogglerDemo01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <ul class="nav ml-auto p-2 bd-highlight">
+                <li class="nav-item">
+                  <a href="../index.html">Inicio </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../html/proximoviaje.html">Proximo viaje</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../html/viajeanterior.html">Viaje anterior</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../html/contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <section>
+            <div class="cover d-flex justify-content-end align-items-end flex-column p-5"
+                 style="background-image:url(../images/contacto.jpg)">  
+              <h1 class="text-right">ESTÁS A UN PASO <br/>DE CONSEGUIRLO</h1>
+            </div>
+        </section>
+        <section>
+            <div class="container mt-5">
+                <div class="row">
+                  <div class="pl-2 pr-2 border border-light shadow p-3 mb-5 bg-white rounded col-lg-4 col-md-4 col-sm-12">
+                    <p class="text-justify">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                      Sed est sem, tristique a cursus et, blandit sit amet dui. 
+                      Praesent non leo mattis, tempor lectus in, porta nunc. 
+                      Maecenas fermentum nisl suscipit, condimentum velit sit amet, vehicula turpis. 
+                      Sed a massa faucibus ligula posuere egestas. 
+                      Integer id congue nisl, vel rhoncus magna. 
+                      Sed tincidunt, elit et convallis pharetra, erat dui semper purus, 
+                      vel convallis urna dolor in ipsum. 
+                      Donec vel turpis sed massa aliquam hendrerit a gravida nibh. 
+                      Praesent viverra ligula eu leo auctor finibus. Nullam eu cursus arcu. 
+                      Duis viverra elit mi, nec tristique felis gravida in. 
+                      Duis ut dolor efficitur, tristique nunc et, luctus elit. 
+                      Mauris faucibus sapien non metus vulputate, eget elementum diam commodo. 
+                      Praesent sollicitudin erat vel sapien maximus commodo. 
+                      Donec placerat tristique magna, nec luctus nunc interdum eget. 
+                    </p>
+                  </div>
+                  <div class="pl-4 pr-2 col-lg-8 col-md-8 col-sm-12 mb-5">
+                    <form action="datos.php" method="POST">
+                      <div class="form-row mt-1">
+                        <div class="col-lg-6">
+                          <label for="nombre">Nombre</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="nombre"
+                            name="nombre"
+                            required
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="apellidos">Apellidos</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="apellidos"
+                            name="apellidos"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="form-row mt-1">
+                        <div class="col-lg-6">
+                          <label for="email">Email</label>
+                          <div class="input-group">
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="email"
+                              name="email"
+                              required
+                            />
+                          </div>
+                        </div>
+                       <div class="col-lg-6">
+                          <label for="remail">Repite el Email</label>
+                          <div class="input-group">
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="remail"
+                              name="remail"
+                              required
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-row mt-1">
+                        <div class="col-lg-6">
+                          <label for="ciudad">Ciudad</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="ciudad"
+                            name="ciudad"
+                            required
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <label for="cp">Código postal</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="cp"
+                            name="cp"
+                            pattern="[0-9]{5}"
+                            title="Solo se acepta códigos postales de 5 cifras"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group mt-1">
+                        <label for="mensaje">Deja tu consulta aquí abajo</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="7"></textarea>
+                      </div>
+                      <div class="d-flex flex-row justify-content-center align-items-center">
+                        <button class="btn btn-primary btn-lg mr-2" type="submit">
+                          Contacta
+                        </button>
+                        <button class="btn btn-primary btn-lg ml-2" type="reset">
+                          Cancela
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            </div>  
+        </section>
+        <section>
+          <h3>Visita cualquiera de nuestras redes sociales</h3>
+          <figure class="fotos">
+            <a href="https://es-es.facebook.com/"><img src="../images/fb.png" alt="icono facebook"/></a>
+            <a href="https://www.instagram.com/"><img src="../images/instagram.png" alt="icono instagram"/></a>
+            <a href="https://www.snapchat.com/l/es/"><img src="../images/snapchat.jpg" alt="icono snapchat"/></a>
+            <a href="https://twitter.com/"><img src="../images/twitter.png" alt="icono twitter"/></a>
+            <a href="https://www.whatsapp.com/"><img src="../images/whatsapp.jpg" alt="icono whatsapp"/></a>
+            <a href="https://www.youtube.com/"><img src="../images/youtube.png" alt="icono youtube"/></a>
+          </figure>
+        </section>
+        <footer>
+          <p>Estuando || Copyright &copy; 2020 || Carlos Cartes Fernandez</p>  
+        </footer>
+        <script
+          src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+          integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+          integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+          crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
